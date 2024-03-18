@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Table(name="netflix_user")
 public class NetflixUserEntity {
     @Id
-    private BigInteger id;
+    private Long id;
     private String uuid;
     private String lastname;
     private String firstname;
@@ -19,6 +19,6 @@ public class NetflixUserEntity {
     private Sex sex;
     private LocalDate birthDate;
 
-    @OneToOne
+    @OneToOne(mappedBy = "netflixUserEntity")
     private NetflixAccountEntity netflix_account_entity;
 }

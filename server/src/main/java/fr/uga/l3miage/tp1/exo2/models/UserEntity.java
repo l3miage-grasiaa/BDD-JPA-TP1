@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.OffsetDateTime;
 
 @Entity
-public class User {
+public class UserEntity {
     @Id
     private Long idUser;
 
@@ -13,6 +13,6 @@ public class User {
     private OffsetDateTime lastConnexion;
 
     @OneToOne
-    private Session session;
+    private SessionEntity git;
 
 }
