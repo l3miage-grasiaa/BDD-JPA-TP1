@@ -13,6 +13,6 @@ public class UserEntity {
     private OffsetDateTime lastConnexion;
 
     @OneToOne
-    private SessionEntity git;
+    private SessionEntity session;
 
 }
