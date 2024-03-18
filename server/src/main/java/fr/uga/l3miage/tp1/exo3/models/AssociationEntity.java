@@ -21,7 +21,6 @@ public class AssociationEntity {
     private AssociationType association_type;
 
     @ManyToOne
-    @JoinColumn(name="fk_name", referencedColumnName="name")
     private FederationEntity federation_entity;
 
 }

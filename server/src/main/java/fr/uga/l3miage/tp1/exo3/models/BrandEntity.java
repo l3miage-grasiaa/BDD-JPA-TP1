@@ -18,7 +18,6 @@ public class BrandEntity {
     private BrandType type;
 
     @ManyToOne
-    @JoinColumn(name = "fk_product_entity", referencedColumnName = "bar_code_number")
-    private Set<ProductEntity> products_entities;
+    private ProductEntity produit;
 
 }

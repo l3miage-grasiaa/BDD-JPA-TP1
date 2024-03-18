@@ -10,6 +10,6 @@ public class FederationEntity {
 
     private Boolean isFageMembership;
 
-    @OneToMany(mappedBy="name")
+    @OneToMany(mappedBy="federation_entity")
     private Set<AssociationEntity> associations_entities;
 }

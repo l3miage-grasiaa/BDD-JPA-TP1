@@ -1,6 +1,7 @@
 package fr.uga.l3miage.tp1.exo3.models;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name="product_entity")
@@ -13,6 +14,6 @@ public class ProductEntity {
 
     private Boolean consumable;
 
-    @OneToMany(mappedBy="bar_code_number")
-    private BrandEntity brand_entity;
+    @OneToMany
+    private Set<BrandEntity> brand_entity;
 }
